@@ -1,0 +1,6 @@
+{
+  "objetivo": "Hacer un CRUD",
+  "contexto": {
+    "stack": ["Java"]
+  }
+}

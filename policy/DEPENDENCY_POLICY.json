@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "severity_blocking_rules": {
+    "critica": { "block": true, "notify": true },
+    "alta": { "block": true, "notify": true },
+    "media": { "block": false, "notify": true },
+    "baja": { "block": false, "notify": false }
+  },
+  "blocked_packages": [
+    {
+      "ecosystem": "java",
+      "package": "log4j",
+      "version_range": "< 2.16.0",
+      "severity": "critica",
+      "reason": "Remote Code Execution (CVE-2021-44228)",
+      "alternative": "log4j >= 2.17.0"
+    },
+    {
+      "ecosystem": "node",
+      "package": "lodash",
+      "version_range": "< 4.17.21",
+      "severity": "alta",
+      "reason": "Prototype Pollution",
+      "alternative": "lodash >= 4.17.21"
+    }
+  ]
+}
