@@ -6,7 +6,7 @@ Guía base para montar un servidor MCP (Model Context Protocol) que ayude a part
 
 1. Instala dependencias:
 
-npm install
+pnpm install
 
 2. Inicia el servidor:
 

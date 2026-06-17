@@ -30,7 +30,7 @@ export function validateDependencies(deps: DependencyInput[] = []): RuleOutcome[
     outcomes.push({
       rule: "DEPENDENCY_SECURITY",
       passed: false,
-      severity: match.severity,
+      severity: match.severity as import("../types").Severity,
       message: `${dep.package}@${dep.version} bloqueado: ${match.reason}`,
       details: [
         `ecosystem=${dep.ecosystem}`,
