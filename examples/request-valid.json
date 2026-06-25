@@ -1,0 +1,17 @@
+{
+  "objetivo": "Crear endpoint de autenticacion con JWT",
+  "contexto": {
+    "stack": ["TypeScript", "Node.js"],
+    "framework": "Express",
+    "base_datos": "PostgreSQL"
+  },
+  "restricciones": ["No usar servicios pagos", "Maximo 36 horas"],
+  "criterio_exito": "Login y refresh token funcionando con pruebas unitarias",
+  "dependencias": [
+    {
+      "ecosystem": "node",
+      "package": "lodash",
+      "version": "4.17.21"
+    }
+  ]
+}

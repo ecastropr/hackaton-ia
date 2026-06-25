@@ -1,0 +1,9 @@
+{
+  "objetivo": "Crear API REST",
+  "contexto": {
+    "stack": ["Ruby", "Rails"],
+    "framework": "Rails 7"
+  },
+  "restricciones": [],
+  "criterio_exito": "API funcionando"
+}

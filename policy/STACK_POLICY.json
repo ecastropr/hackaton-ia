@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "event": "hackaton-2026",
+  "enforcement": "STRICT",
+  "allowed_technologies": {
+    "backend": ["Node.js", "Java", "Python", "C#", "Kotlin"],
+    "frontend": ["React", "Angular", "HTML"],
+    "languages": ["JavaScript", "TypeScript", "Java", "Python", "C#", "Kotlin"],
+    "databases": ["SQL", "PostgreSQL"],
+    "styling": ["CSS", "SASS"],
+    "design": ["Figma", "Photoshop", "Mockups", "Canva"]
+  },
+  "exceptions": {
+    "request_by": "mentor",
+    "valid_for_hours": 24,
+    "requires_justification": true
+  }
+}

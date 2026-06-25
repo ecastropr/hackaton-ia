@@ -1,0 +1,25 @@
+{
+  "required_fields": {
+    "objetivo": { "type": "string", "min_length": 10, "description": "Que quiere lograr" },
+    "contexto": {
+      "type": "object",
+      "required_properties": ["stack"],
+      "description": "Stack tecnologico y entorno"
+    },
+    "restricciones": {
+      "type": "array",
+      "min_items": 0,
+      "description": "Limitaciones de tiempo, seguridad u operativas"
+    },
+    "criterio_exito": {
+      "type": "string",
+      "min_length": 5,
+      "description": "Como sabran que quedo bien"
+    }
+  },
+  "gate_logic": {
+    "missing_2_or_more_fields": { "action": "BLOCK", "response": "debug_prompt" },
+    "missing_1_field": { "action": "WARN", "response": "continue_with_assumption" },
+    "missing_0_fields": { "action": "ALLOW", "response": "proceed_normal" }
+  }
+}
